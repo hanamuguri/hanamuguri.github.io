@@ -1165,7 +1165,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff8c38;
+  background: #4dffe8;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2561,13 +2561,15 @@ ul.breadcrumb li + li:last-child {
   font-size: 0.95em;
 }
 .post-block {
-  padding: 80px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 /*gallery*/
 .gallery-page {
-  margin-top: 0px;
+  padding: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .img-list,
 .gallery-list {
