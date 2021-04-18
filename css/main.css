@@ -40,9 +40,17 @@
 }
 
 /* 全局 */
-html {
+body {
+    margin: 0px;
     font-family: 'Source Han Serif';
     /* color: #535353; */
+}
+
+/* 链接 */
+a:link {color:#535353;}
+a:visited {color:#535353;}
+a {
+    text-decoration: none;
 }
 
 .nav {
@@ -50,7 +58,7 @@ html {
     width: 100%;
     top: 0px;
     border-bottom: 1px dashed #999999;
-    min-height: 80px;
+    min-height: 64px;
     padding-top: 15px;
 }
 
@@ -66,7 +74,8 @@ html {
 .product-name,
 .product-name a {
     font-family: 'Century Gothic', sans-serif;
-    font-size: 2em;
+    font-size: 2rem;
+    color: #000000;
 }
 
 /* 分类 */
@@ -152,6 +161,11 @@ html {
     display: inline-block;
     max-width: 100%;
     overflow-x: hidden;
+}
+.nav .pure-menu-item {
+    float: left;
+    padding-right: 2rem;
+    letter-spacing: 2px;
 }
 
 /* 首页目录 */
@@ -250,7 +264,3 @@ video {
     padding-bottom: 20px;
     text-align: center;
 }
-
-/* 链接 */
-a:link {color:#535353;} /* 未访问的链接 */
-a:visited {color:#535353;} /* 已访问的链接 */
