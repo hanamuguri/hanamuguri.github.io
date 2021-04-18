@@ -1,12 +1,22 @@
-body {
-    font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
-    font-weight: 300;
+/* post页样式 */
+#inner-header {
+    margin: 0px, auto;
+    padding-bottom: 32px;
+}
+
+#inner-header h1 {
+    text-align: center;
+    white-space: pre-wrap;
+    width: 90%;
+    margin: 100px auto 48px auto;
+    letter-spacing: 0px;
+    text-indent: 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #2E2E2E;
+    color: #252525;
     line-height: 1.15em;
-    font-family: 'Open Sans', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+    font-family: 'Source Han Serif';
     text-rendering: geometricPrecision;
 }
 
@@ -29,9 +39,16 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
 }
 
-.nav {
+#pagetitle {
     border-bottom: none;
-    height: auto;
+}
+
+#pagetitle h1 {
+    text-align: center;
+    white-space: pre-wrap;
+    width: 90%;
+    margin: 80px auto 80px auto;
+    letter-spacing: 0px;
 }
 
 .inner-page {
@@ -44,30 +61,14 @@ h1 {
     border-bottom: 0;
 }
 
-#header {
-    padding-bottom: 32px;
-}
-
-#header h1 {
-    text-align: center;
-    white-space: pre-wrap;
-    width: 90%;
-    margin: 81px auto 48px auto;
-}
-
 h1 {
-    font-size: 3.6rem;
+    font-size: 2rem;
     letter-spacing: -2px;
     text-indent: -3px;
 }
 
 h2 {
     margin-top: 2em;
-}
-
-.pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus {
-    background-color: initial;
-    border: #777 solid 1px;
 }
 
 .post-meta {
@@ -90,7 +91,7 @@ div.highlighter-rouge pre {
     white-space: pre-wrap;
 }
 
-a {
+.inner-page a {
     color: #463F5C;
     text-decoration: underline;
 }

@@ -10,33 +10,6 @@
     font-style: normal;
     font-weight: bold;
     src: url('https://hanamuguri.oss-cn-shenzhen.aliyuncs.com/fonts/SourceHanSerif.ttc') format('ttc');
-
-}/* @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Open Sans Regular'),url('./github/400.woff') format('woff')
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: normal;
-    src: local('Open Sans Italic'),url('./github/400i.woff') format('woff')
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Open Sans Bold'),url('./github/700.woff') format('woff')
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: bold;
-    src: local('Open Sans Bold Italic'),url('./github/700i.woff') format('woff')
 }
 
 /* 全局 */
@@ -164,11 +137,15 @@ a {
 }
 .nav .pure-menu-item {
     float: left;
-    padding-right: 2rem;
+    padding-left: 2rem;
     letter-spacing: 2px;
 }
 
 /* 首页目录 */
+#list-contents>h3 {
+    line-height: normal;
+}
+
 #content {
     font-family: 'Source Han Serif Semibold';
     font-size: 2em;
@@ -263,4 +240,9 @@ video {
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
+}
+
+/* 目录 */
+.toc {
+    float: left;
 }
