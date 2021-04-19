@@ -1,4 +1,20 @@
 /* post页样式 */
+.post-container {
+    padding-left: 300px;
+    transition: 0.2s all;
+    position: sticky;
+}
+
+@media screen and (max-device-width: 768px) {
+    .post-container{
+        padding-left: 0px;
+    }
+}
+
+.post-container-large {
+    padding-left: 0px;
+}
+
 #inner-header {
     margin: 0px, auto;
     padding-bottom: 32px;
@@ -20,13 +36,110 @@ h1, h2, h3, h4, h5, h6 {
     text-rendering: geometricPrecision;
 }
 
+/* ###### Typora主题 ###### */
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+}
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+
+p {
+    text-indent: 2em;
+    word-break: break-all;
+}
+
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    /* background-color: #e7e7e7; */
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+    border-bottom: 1px dashed #7a7a7a;
+}
+
+blockquote {
+    font-style: normal;
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+
+.gutter {
+    background-color: #ececec;
+}
+
+.code {
+    background-color: #fcfcfc;
+}
+
+table {
+    width: 100%;
+}
+
+table>thead>tr>th,
+table>thead>tr>td,
+table>tbody>tr>th,
+table>tbody>tr>td,
+table>tfoot>tr>th,
+table>tfoot>tr>td {
+    padding: 12px;
+    line-height: 1.2;
+    vertical-align: top;
+    /* border-top: 1px solid #333; */
+}
+
+table>thead>tr>th {
+    vertical-align: bottom;
+    /* border-bottom: 2px solid #333; */
+}
+
+table>caption+thead>tr:first-child>th,
+table>caption+thead>tr:first-child>td,
+table>colgroup+thead>tr:first-child>th,
+table>colgroup+thead>tr:first-child>td,
+table>thead:first-child>tr:first-child>th,
+table>thead:first-child>tr:first-child>td {
+    border-top: 0;
+}
+
+/* table>tbody+tbody {
+    border-top: 2px solid #333;
+} */
+
+/* ######################## */
+
 #pagecontainer {
     background-color: #fff;
     min-height: calc(100vh - 510px);
 }
 
 #post-content {
-    padding-top: 36px;
+    /* padding-top: 36px; */
     border-top: 1px dashed #999999;
     line-height: 1.6rem;
     padding-bottom: 100px;
@@ -73,6 +186,7 @@ h2 {
 
 .post-meta {
     font-style: italic;
+    letter-spacing: 2px;
     text-align: center;
     color: #7a7a7a;
 }
@@ -95,3 +209,76 @@ div.highlighter-rouge pre {
     color: #463F5C;
     text-decoration: underline;
 }
+
+/* 目录 */
+.toc-container {
+    border-right: 1px solid #efefef;
+    display: block;
+    position: sticky;
+    float: left;
+    top: 0px;
+    width: 300px;
+    min-height: 1080px;
+    height: auto;
+    background-color: #fcfcfc;
+    font-family:"Microsoft YaHei";
+    font-size: 0.9em;
+    overflow-y: auto;
+    transition: 0.2s all;
+    z-index: 1;
+}
+
+.toc-hidden {
+    margin-left: -300px;
+}
+
+@media screen and (max-device-width: 768px) {
+    .toc-container{
+        margin-left: -300px;
+    }
+}
+
+@media screen and (max-device-width: 768px) {
+    .toc-hidden{
+        margin-left: 0px;
+    }
+}
+
+.toc-container::-webkit-scrollbar {display:none}
+
+#toc-title>p {
+    text-align: center;
+    text-indent: 0%;
+    font-weight: bold;
+}
+
+.toc {
+    line-height: 26px;
+}
+
+.toc-child {
+    padding-left: 15px;
+}
+
+ol {
+    padding-right: 15px;
+}
+
+.button {
+    position: fixed;
+    float: left;
+    bottom:0;
+    padding: 0 10px;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.button:before {
+    content: '<<<';
+}
+
+.btnc:before {
+    content: '>>>';
+}
+

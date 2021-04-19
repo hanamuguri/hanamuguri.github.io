@@ -14,7 +14,7 @@
 
 
     <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=yes" />
-
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
 <meta name="generator" content="Hexo 4.2.1"></head>
 <body>
 <nav>
@@ -51,16 +51,39 @@
         </div>
     </header>
 </nav>
-<header id="inner-header">
-    <h1></h1>
-    <section class="post-meta">
-    <time>1618708343618</time>&nbspby&nbsp<span></span>
-    </section>
-</header>
+<aside class="toc-container" id="toc-container">
+    <div id="toc">
+        <div id="toc-title">
+            <p>大纲</p>
+        </div>
+        
+            <p>无</p>
+        
+    </div>
+</aside>
+
+<a class="button"></a>
+
+<script type="text/javascript">
+    $('.button').on('click',function () {
+        $('.button').toggleClass('btnc');
+        $('.toc-container').toggleClass('toc-hidden');
+        $('.post-container').toggleClass('post-container-large');
+
+    })
+</script>
+<div class="post-container" id="post-container">
+    <header id="inner-header">
+        <h1></h1>
+        <section class="post-meta">
+            <time>2021/4/18</time>&nbspby&nbsp<span></span>
+        </section>
+    </header>
     <div id="post-content" class="inner-page">
         <p>自制主题，使用Hexo框架。仿<a href="https://github.com/jwillmer/jekyllDecent" target="_blank" rel="noopener">jwillmer/jekyllDecent</a>以及<a href="https://support.typora.io/" target="_blank" rel="noopener">Typora Support </a>,未完工。</p>
 
     </div>
+</div>
 <footer id="footer">
     <div class="container">
         <div class="row">
