@@ -1,8 +1,9 @@
-/* post页样式 */
+/* post容器 */
 .post-container {
     padding-left: 300px;
     transition: 0.2s all;
     position: sticky;
+    height: auto;
 }
 
 @media screen and (max-device-width: 768px) {
@@ -24,9 +25,11 @@
     text-align: center;
     white-space: pre-wrap;
     width: 90%;
-    margin: 100px auto 48px auto;
+    margin: 0px auto 0px auto;
     letter-spacing: 0px;
     text-indent: 0px;
+    padding-top: 100px;
+    padding-bottom: 48px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -36,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
     text-rendering: geometricPrecision;
 }
 
-/* ###### Typora主题 ###### */
+/* ###### 正文 ###### */
 h1 {
     font-size: 2.25em;
     line-height: 1.2;
@@ -210,7 +213,7 @@ div.highlighter-rouge pre {
     text-decoration: underline;
 }
 
-/* 目录 */
+/* toc容器 */
 .toc-container {
     border-right: 1px solid #efefef;
     display: block;
@@ -219,7 +222,7 @@ div.highlighter-rouge pre {
     top: 0px;
     width: 300px;
     min-height: 1080px;
-    height: auto;
+    height: 100%;
     background-color: #fcfcfc;
     font-family:"Microsoft YaHei";
     font-size: 0.9em;
