@@ -6,7 +6,7 @@
     height: auto;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-device-width: 1024px) {
     .post-container{
         padding-left: 0px;
     }
@@ -85,6 +85,11 @@ hr {
     border-bottom: 1px dashed #7a7a7a;
 }
 
+blockquote,figure {
+    margin-inline-start: 5%;
+    margin-inline-end: 5%;
+}
+
 blockquote {
     font-style: normal;
     border-left: 4px solid #dfe2e5;
@@ -94,6 +99,7 @@ blockquote {
 
 .gutter {
     background-color: #ececec;
+    max-width: 10px;
 }
 
 .code {
@@ -133,6 +139,10 @@ table>thead:first-child>tr:first-child>td {
 /* table>tbody+tbody {
     border-top: 2px solid #333;
 } */
+
+ul {
+    word-break: break-all;
+}
 
 /* ######################## */
 
@@ -221,7 +231,7 @@ div.highlighter-rouge pre {
     float: left;
     top: 0px;
     width: 300px;
-    min-height: 1080px;
+    min-height: 100vh;
     height: 100%;
     background-color: #fcfcfc;
     font-family:"Microsoft YaHei";
@@ -235,13 +245,13 @@ div.highlighter-rouge pre {
     margin-left: -300px;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-device-width: 1024px) {
     .toc-container{
         margin-left: -300px;
     }
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-device-width: 1024px) {
     .toc-hidden{
         margin-left: 0px;
     }
